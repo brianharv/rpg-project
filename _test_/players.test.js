@@ -1,6 +1,4 @@
-import { Character } from '../src/js/players.js';
-import { Game } from '../src/js/players.js';
-import { checkCharType } from '../src/js/players.js';
+import { Character, Game, checkCharType, generateEnemy } from '../src/js/players.js';
 
 describe('Character', () => {
 
@@ -16,7 +14,8 @@ describe('checkCharType', () => {
   test('should correctly return an array of character stats', () => {
     expect(checkCharType("mage")).toEqual([10, 3]);
   });
-});
+})
+
 
 describe('Game', () => {
 
@@ -26,5 +25,14 @@ describe('Game', () => {
     expect(game.character.health).toEqual(10);
     expect(game.character.attack).toEqual(3);
     expect(game.character.experience).toEqual(0);
+  })
+})
+
+describe('generateEnemy', () => {
+
+  test('should create an enemy object', () => {
+
+    expect(generateEnemy(1)).toEqual(["Wolf", 10, 3, 0]);
+    expect(generateEnemy(2)).toEqual(["Goblin", 9, 2, 0]);
   })
 })
