@@ -43,3 +43,4 @@ describe('getRandom', () => {
     expect(getRandom()).toBeLessThanOrEqual(3);
   })
 })
+

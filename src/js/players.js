@@ -19,7 +19,7 @@ export class Character {
 // }
 
 export function getRandom() {
-   //return Math.floor(Math.random() * 3) + 1;
+   return Math.floor(Math.random() * 3) + 1;
  }
 
 export function generateEnemy(randNum) {
