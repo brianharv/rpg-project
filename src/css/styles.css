@@ -3,7 +3,7 @@ body {
 }
 h1 {
   color: white;
-  margin-top: 200px;
+  margin-top: 100px;
   text-align: center;
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
   font-family: 'Aclonica', sans-serif;
@@ -14,9 +14,42 @@ h3 {
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
   text-align: center;
   font-family: 'Aclonica', sans-serif;
+  padding: 10px;
 }
 .btn {
+  position: absolute;
+  left: 44%;
   background-color: rgb(90, 109, 8);
   border: none;
   margin-top: 15px;
+  margin-bottom: 30px;
+  font-family: 'Aclonica', sans-serif;
 }
+
+p {
+  color: white;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  text-align: center;
+  font-family: 'Aclonica', sans-serif;
+}
+
+img {
+  max-height: 350px;
+  max-width: 500px;
+  margin: auto;
+  display: block;
+  border-radius: 8px;
+  border: solid black;
+}
+
+img:hover {
+  border: solid rgb(214, 214, 214);
+}
+  
+/* #mageClass {
+  display: none;
+}
+
+#paladinClass {
+  display: none;
+} */

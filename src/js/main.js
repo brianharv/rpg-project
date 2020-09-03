@@ -6,17 +6,31 @@ import { Character, Game, checkCharType, getRandom, generateEnemy, Enemy } from 
 
 
 $(document).ready(function () {
-  $("#mageOption").click(function() {
-    $("#mageClass").show();
+  let userInput;
+  let charStatsArray;
+  $("#magePic").click(function () {
+    //$("#mageClass").show();
     console.log("T'was clicked!");
+    userInput = "mage"
   });
-  $("#form").submit(function (event) {
-    event.preventDefault();
-    const userInput = $("#charSelect").val();
-    let charStatsArray = checkCharType(userInput);
-    const [health, attack] = charStatsArray; //deconstructs array
+  $("#palPic").click(function () {
+    //$("#mageClass").show();
+    console.log("T'was clicked!");
+    userInput = "paladin"
+  });
+
+  $("#startGame").click(function () {
+    console.log("Start game was clicked");
+    if (userInput === "mage" || userInput === "paladin") {
+      charStatsArray = checkCharType(userInput);
+    }
+    else {
+      alert("Please Select a Character!");
+      return false;
+    }
+    const [health, attack] = charStatsArray //deconstructs array
     let character = new Character(health, attack);
-     console.log(character);
+    console.log(character);
     let randNum = getRandom();
     let enemyStatsArray = generateEnemy(randNum);
     const [enemyName, enemyHealth, enemyAttack, enemyExperience] = enemyStatsArray;

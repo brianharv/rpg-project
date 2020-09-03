@@ -10,27 +10,35 @@
     <br>
     <br>
     <h3>Choose your character to begin your journey</h3>
-    <form id="form">
-    <select class="form-control" id="charSelect">
-      <option id="mageOption" value="mage">Mage</option>
-      <option id="palOption" value="paladin">Paladin</option>
-    </select>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-    <div id="mageClass">
-      <img src=
-      <h3>Mage</h3>
-      <p>Master of sorcery and the divine arts.</p>
-      <img src="assets/img/mage.jpg" alt="a deadly mage">
-    </div>
-    <div id="paladinClass">
-      <img src=
-      <h3>Paladin</h3>
-      <p>A holy warrior built for defense. </p>
+    <div class="row">
+      <div class="col-md-6">
+        <div id="mageClass">
+          <h3>Mage</h3>
+          <img id="magePic" src="assets/img/mage.jpg" alt="a deadly mage">
+          <p>Master of sorcery and the divine arts.</p>
+          <!--Character stats-->
+            <div id="mageStats">
+              <p>Stats</p>
+            </div>
+        </div>
       </div>
-
-    </div>
-  </div>
-  
+      <div class="col-md-6">
+        <div id="paladinClass">
+          <h3>Paladin</h3>
+          <img id="palPic" src="assets/img/paladin.jpg" alt="a mighty paladin">
+          <p>A holy warrior built for defense. </p>
+          <!--Character stats-->
+            <div id="palStats">
+              <p>Stats</p>
+            </div>
+        </div>
+      </div>
+    </div> 
+    <div class="row">
+        <div class="col-md-12">
+          <button id="startGame" class="btn btn-primary">Start Game!</button>
+        </div>
+    </div>   
+  </div>  
 </body>
 </html>
