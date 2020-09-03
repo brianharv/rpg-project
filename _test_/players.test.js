@@ -44,3 +44,29 @@ describe('getRandom', () => {
   })
 })
 
+//Test Below Tests if new instance of game object is created
+describe('Game', () => {
+  test('should generate character and enemy into new game', () => {
+    expect(new Game()).toBeInstanceOf(Game);
+  })
+})
+
+//Test below tests that character and enemy are objects within the game object
+describe('game', () => {
+  test('should generate character and enemy into new game', () => {
+    let character = {health: 10, attack: 3, experience: 0}
+    let enemy = {enemyName: "Goblin", enemyHealth: 9, enemyAttack: 2, enemyExperience: 0}
+    let game = new Game(character, enemy);
+    expect(game.character).toEqual({health: 10, attack: 3, experience: 0});
+    expect(game.enemy).toEqual({enemyName: "Goblin", enemyHealth: 9, enemyAttack: 2, enemyExperience: 0});
+  })
+})
+
+// describe('Game', () => {
+//   test('should generate character and enemy into new game', () => {
+//     let enemy;
+//     let character = new Character();
+//     let game = new Game(character, enemy);
+//     expect(game.character).toEqual(character);
+//   })
+// })

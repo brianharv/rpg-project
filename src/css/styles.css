@@ -1,0 +1,22 @@
+body {
+  background-image: url("https://images.template.net/wp-content/uploads/2016/12/17104201/Fantasy-Landscape-Illustrations.jpg");
+}
+h1 {
+  color: white;
+  margin-top: 200px;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  font-family: 'Aclonica', sans-serif;
+  font-size: 80px;
+}
+h3 {
+  color: white;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  text-align: center;
+  font-family: 'Aclonica', sans-serif;
+}
+.btn {
+  background-color: rgb(90, 109, 8);
+  border: none;
+  margin-top: 15px;
+}
