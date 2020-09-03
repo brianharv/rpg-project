@@ -1,4 +1,4 @@
-import { Character, Game, checkCharType, generateEnemy } from '../src/js/players.js';
+import { Character, Game, checkCharType, generateEnemy, getRandom } from '../src/js/players.js';
 
 describe('Character', () => {
 
@@ -34,5 +34,12 @@ describe('generateEnemy', () => {
 
     expect(generateEnemy(1)).toEqual(["Wolf", 10, 3, 0]);
     expect(generateEnemy(2)).toEqual(["Goblin", 9, 2, 0]);
+  })
+})
+
+describe('getRandom', () => {
+  test('should generate random number within parameters', () => {
+    expect(getRandom()).toBeGreaterThanOrEqual(1);
+    expect(getRandom()).toBeLessThanOrEqual(3);
   })
 })

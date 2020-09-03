@@ -12,6 +12,7 @@ $(document).ready(function () {
     let charStatsArray = checkCharType(userInput);
     const [health, attack] = charStatsArray; //deconstructs array
     let character = new Character(health, attack);
+
     console.log(character);
     //let enemy = new Enemy();
 

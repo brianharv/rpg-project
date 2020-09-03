@@ -9,7 +9,6 @@ export class Character {
     this.health = health,
       this.attack = attack,
       this.experience = 0
-
   }
 }
 
@@ -19,9 +18,9 @@ export class Character {
 //   }
 // }
 
-// function genRandom() {
-//   return Math.floor(Math.random() * 3) + 1;
-// }
+export function getRandom() {
+   //return Math.floor(Math.random() * 3) + 1;
+ }
 
 export function generateEnemy(randNum) {
   let enemy1 = ["Wolf", 10, 3, 0];
